@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>BOOO</title>
+  <title>BOOO&#39;s Blog</title>
+  <icon>https://www.gravatar.com/avatar/80058dfd0721db015f108eaf12bcda9f</icon>
+  <subtitle>Take Me To The TARDIS</subtitle>
+  <link href="http://kaijun.rocks/hexo-theme-huxblog/atom.xml" rel="self"/>
   
-  <subtitle>Take me to the TARDIS.</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
-  
-  <link href="http://example.com/"/>
+  <link href="http://kaijun.rocks/hexo-theme-huxblog/"/>
   <updated>2022-11-25T21:40:54.868Z</updated>
-  <id>http://example.com/</id>
+  <id>http://kaijun.rocks/hexo-theme-huxblog/</id>
   
   <author>
-    <name>MATTS</name>
-    
+    <name>csbbbv</name>
+    <email>Kaijun.cn@gmail.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>my new post</title>
-    <link href="http://example.com/2022/11/26/my-new-post/"/>
-    <id>http://example.com/2022/11/26/my-new-post/</id>
+    <link href="http://kaijun.rocks/hexo-theme-huxblog/2022/11/26/my-new-post/"/>
+    <id>http://kaijun.rocks/hexo-theme-huxblog/2022/11/26/my-new-post/</id>
     <published>2022-11-25T21:37:37.000Z</published>
     <updated>2022-11-25T21:40:54.868Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2022/11/26/hello-world/"/>
-    <id>http://example.com/2022/11/26/hello-world/</id>
+    <link href="http://kaijun.rocks/hexo-theme-huxblog/2022/11/26/hello-world/"/>
+    <id>http://kaijun.rocks/hexo-theme-huxblog/2022/11/26/hello-world/</id>
     <published>2022-11-25T21:27:50.138Z</published>
     <updated>2022-11-25T21:27:50.139Z</updated>
     
