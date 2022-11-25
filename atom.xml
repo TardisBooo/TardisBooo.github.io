@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-11-25T21:40:54.868Z</updated>
+  <updated>2022-11-25T21:27:50.139Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>my new post</title>
-    <link href="http://example.com/2022/11/26/my-new-post/"/>
-    <id>http://example.com/2022/11/26/my-new-post/</id>
-    <published>2022-11-25T21:37:37.000Z</published>
-    <updated>2022-11-25T21:40:54.868Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="My-Fist-Blog"><a href="#My-Fist-Blog" class="headerlink" title="My Fist Blog"></a>My Fist Blog</h1><h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h2><hr><blockquote><blockquote><p>csbbbv</p></blockquote></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;My-Fist-Blog&quot;&gt;&lt;a href=&quot;#My-Fist-Blog&quot; class=&quot;headerlink&quot; title=&quot;My Fist Blog&quot;&gt;&lt;/a&gt;My Fist Blog&lt;/h1&gt;&lt;h2 id=&quot;Hello-World&quot;&gt;&lt;a href=&quot;#He</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
