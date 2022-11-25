@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>BOOO</title>
-  
-  <subtitle>Take me to the TARDIS.</subtitle>
+  <title>Booo</title>
+  <icon>https://www.gravatar.com/avatar/73d9f5e835e1fe3f26ab6aed46d01719</icon>
+  <subtitle>Take me to the TARDIS</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
@@ -10,8 +10,8 @@
   <id>http://example.com/</id>
   
   <author>
-    <name>MATTS</name>
-    
+    <name>csbbbv</name>
+    <email>HaojenMa@gmail.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
