@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Booo</title>
-  <icon>https://www.gravatar.com/avatar/73d9f5e835e1fe3f26ab6aed46d01719</icon>
+  <icon>https://www.gravatar.com/avatar/04b2a8cd0fb5fdce3c1c4105f99f0370</icon>
   <subtitle>Take me to the TARDIS</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
@@ -11,7 +11,7 @@
   
   <author>
     <name>csbbbv</name>
-    <email>HaojenMa@gmail.com</email>
+    <email>shelboo1997@outlook.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
