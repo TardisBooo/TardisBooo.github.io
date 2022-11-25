@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://kaijun.rocks/hexo-theme-huxblog/2022/11/26/my-new-post/</loc>
+    <loc>http://example.com/2022/11/26/my-new-post/</loc>
     
     <lastmod>2022-11-25</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://kaijun.rocks/hexo-theme-huxblog/2022/11/26/hello-world/</loc>
+    <loc>http://example.com/2022/11/26/hello-world/</loc>
     
     <lastmod>2022-11-25</lastmod>
     
@@ -21,7 +21,7 @@
   
 
   <url>
-    <loc>http://kaijun.rocks/hexo-theme-huxblog</loc>
+    <loc>http://example.com/</loc>
     <lastmod>2022-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
