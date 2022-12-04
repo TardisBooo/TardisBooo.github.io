@@ -34,7 +34,7 @@
     
     
     
-    <category term="murmur" scheme="http://example.com/tags/murmur/"/>
+    <category term="murmur" scheme="http://example.com/Tags/murmur/"/>
     
   </entry>
   
@@ -56,7 +56,7 @@
     
     
     
-    <category term="Books" scheme="http://example.com/tags/Books/"/>
+    <category term="Books" scheme="http://example.com/Tags/Books/"/>
     
   </entry>
   
@@ -79,7 +79,7 @@
     
     
     
-    <category term="murmur" scheme="http://example.com/tags/murmur/"/>
+    <category term="murmur" scheme="http://example.com/Tags/murmur/"/>
     
   </entry>
   
