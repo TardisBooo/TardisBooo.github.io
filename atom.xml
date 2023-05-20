@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-17T12:09:56.548Z</updated>
+  <updated>2023-05-20T07:42:40.246Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,15 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://example.com/2023/05/17/test/"/>
-    <id>http://example.com/2023/05/17/test/</id>
-    <published>2023-05-17T12:09:56.548Z</published>
-    <updated>2023-05-17T12:09:56.548Z</updated>
+    <title>C++入门补完001:C++如何工作</title>
+    <link href="http://example.com/2023/05/20/C++%E5%85%A5%E9%97%A8%E8%A1%A5%E5%AE%8C%E8%AE%A1%E5%88%92001-Cpp%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C/"/>
+    <id>http://example.com/2023/05/20/C++%E5%85%A5%E9%97%A8%E8%A1%A5%E5%AE%8C%E8%AE%A1%E5%88%92001-Cpp%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C/</id>
+    <published>2023-05-20T01:12:08.000Z</published>
+    <updated>2023-05-20T07:42:40.246Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-C-运行的四个步骤"><a href="#1-C-运行的四个步骤" class="headerlink" title="1. C++运行的四个步骤"></a>1. C++运行的四个步骤</h1><p>C++运行的四个步骤:：预处理、编译、汇编和链接。每个步骤都会生成对应的文件<br><img src="https://pic1.zhimg.com/v2-87d919fbb9fd98973d2b885ab0d407a0_r.jpg" alt="fig.1"></p><h1 id="2-相关技术"><a href="#2-相关技术" class="headerlink" title="2. 相关技术"></a>2. 相关技术</h1><h2 id="2-1-gcc-x2F-g-常用指令选项："><a href="#2-1-gcc-x2F-g-常用指令选项：" class="headerlink" title="2.1 gcc&#x2F;g++常用指令选项："></a>2.1 gcc&#x2F;g++常用指令选项：</h2><p><img src="https://pic2.zhimg.com/v2-1af29d0495c37c159356ea140d413d39_r.jpg"></p><h2 id="2-2-GDB-gdb"><a href="#2-2-GDB-gdb" class="headerlink" title="2.2 GDB(gdb)"></a>2.2 GDB(gdb)</h2><p>GDB（gdb）全称“GNU symbolic debugger”，是 Linux 下常用的程序调试器。 为了能够使用 gdb 调试，需要在代码编译的时候加上-g，如</p><pre><code>g++ -g -o test test.cpp</code></pre><h1 id="3-C-编译过程详解"><a href="#3-C-编译过程详解" class="headerlink" title="3. C++编译过程详解"></a>3. C++编译过程详解</h1><h2 id="3-1-预处理（Preprocess）"><a href="#3-1-预处理（Preprocess）" class="headerlink" title="3.1 预处理（Preprocess）"></a>3.1 预处理（Preprocess）</h2><p>预编译把一些#define的宏定义完成文本替换，然后将#include的文件里的内容复制到.cpp文件里，如果.h文件里还有.h文件，就递归展开。在预处理这一步，代码注释直接被忽略，不会进入到后续的处理中，所以注释在程序中不会执行。</p><p>gcc&#x2F;g++的预处理实质上是通过预处理器cpp（应该是c preprocess的缩写?）来完成的，所以我们既可以通过g++ -E，也可以通过cpp命令对main.cpp进行预处理：</p><pre><code>g++ -E -I include/ main.cpp -o main.i# 或者直接调用 cpp 命令cpp -I include/ main.cpp -o main.i</code></pre><p>上述命令中： - g++ -E 是让编译器在预处理之后就退出，不进行后续编译过程，等价于cpp指令 - -I include&#x2F;用于指定头文件目录 - main.cpp是要预处理的源文件 - -o main.i用于指定生成的文件名</p><p>预处理之后的程序格式为 *.i，仍是文本文件，可以用任意文本编辑器打开</p><h2 id="3-2-编译（Compile）"><a href="#3-2-编译（Compile）" class="headerlink" title="3.2 编译（Compile）"></a>3.2 编译（Compile）</h2><pre><code>g++ -S -I include/ main.cpp -o main.s   </code></pre><p>与预处理类似，上述命令中： - g++ -S是让编译器在编译之后停止，不进行后续过程 - -I include&#x2F;用于指定头文件目录 - main.cpp是要编译的源文件 - -o main.s用于指定生成的文件名</p><p>编译完成后，会生成程序的汇编代码main.s，这也是文本文件，可以直接用任意文本编辑器查看。</p><pre><code>&#39;与预处理类似，上述命令中： - g++ -S是让编译器在编译之后停止，不进行后续过程 - -I include/用于指定头文件目录 - main.cpp是要编译的源文件 - -o main.s用于指定生成的文件名编译完成后，会生成程序的汇编代码main.s，这也是文本文件，可以直接用任意文本编辑器查看。&#39;</code></pre><h2 id="3-3-汇编（Assemble）"><a href="#3-3-汇编（Assemble）" class="headerlink" title="3.3 汇编（Assemble）"></a>3.3 汇编（Assemble）</h2><p>汇编过程将上一步的汇编代码(main.s)转换成机器码(machine code)，这一步产生的文件叫做目标文件(main.o)，是二进制格式。</p><pre><code>g++ -c -I include/ main.cpp -o main.o# 或者直接调用 as 命令as main.s -o main.o</code></pre><p>上述指令中： - g++ -c让编译器在汇编之后退出，等价于 as - -I include&#x2F;仍是用于指定头文件目录 - main.cpp是要汇编的源文件 - -o main.o用于指定生成的文件名</p><h2 id="3-4-链接（Link）"><a href="#3-4-链接（Link）" class="headerlink" title="3.4 链接（Link）"></a>3.4 链接（Link）</h2><p>C&#x2F;C++代码经过汇编之后生成的目标文件(*.o)并不是最终的可执行二进制文件，而仍是一种中间文件(或称临时文件)，目标文件仍然需要经过链接(Link)才能变成可执行文件。</p><pre><code>既然目标文件和可执行文件的格式是一样的（都是二进制格式），为什么还要再链接一次呢？因为编译只是将我们自己写的代码变成了二进制形式，它还需要和系统组件（比如标准库、动态链接库等）结合起来，这些组件都是程序运行所必须的。链接（Link）其实就是一个“打包”的过程，它将所有二进制形式的目标文件(.o)和系统组件组合成一个可执行文件。完成链接的过程也需要一个特殊的软件，叫做链接器（Linker）。此外需要注意的是：C++程序编译的时候其实只识别.cpp文件，每个cpp文件都会分别编译一次，生成一个.o文件。这个时候，链接器除了将目标文件和系统组件组合起来，还需要将编译器生成的多个.o或者.obj文件组合起来，生成最终的可执行文件(Executable file)。</code></pre><p>以本文中的代码为例，将func.o和main.o链接成可执行文件main.out，指令如下:</p><pre><code>g++ src/func.o main.o -o main.out</code></pre><p>-o main.out用于指定生成的可执行二进制文件名<br>由于g++自动链接了系统组件，所以我们只需要把自定义函数的目标文件与main.o链接即可。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://zhuanlan.zhihu.com/p/618037867">详解C&#x2F;C++代码的预处理、编译、汇编、链接全过程</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-C-运行的四个步骤&quot;&gt;&lt;a href=&quot;#1-C-运行的四个步骤&quot; class=&quot;headerlink&quot; title=&quot;1. C++运行的四个步骤&quot;&gt;&lt;/a&gt;1. C++运行的四个步骤&lt;/h1&gt;&lt;p&gt;C++运行的四个步骤:：预处理、编译、汇编和链接。每个步骤都</summary>
+      
     
     
     
     
+    <category term="cpp" scheme="http://example.com/Tags/cpp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++入门补完计划002-Static关键字</title>
+    <link href="http://example.com/2023/05/20/C++%E5%85%A5%E9%97%A8%E8%A1%A5%E5%AE%8C%E8%AE%A1%E5%88%92002-Static%E5%85%B3%E9%94%AE%E5%AD%97/"/>
+    <id>http://example.com/2023/05/20/C++%E5%85%A5%E9%97%A8%E8%A1%A5%E5%AE%8C%E8%AE%A1%E5%88%92002-Static%E5%85%B3%E9%94%AE%E5%AD%97/</id>
+    <published>2023-05-20T01:12:08.000Z</published>
+    <updated>2023-05-20T07:43:12.126Z</updated>
+    
+    
+    
+    
+    
+    <category term="cpp" scheme="http://example.com/Tags/cpp/"/>
     
   </entry>
   
