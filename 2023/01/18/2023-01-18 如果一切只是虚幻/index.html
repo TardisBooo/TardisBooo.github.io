@@ -1,188 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Head tag -->
-<head>
+<html>
+    <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Take me to the TARDIS">
-    <meta name="keyword" content="C++ DeepLearning MurMur# seo key words">
-    <meta name="theme-color" content="#600090">
-    <meta name="msapplication-navbutton-color" content="#600090">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#600090">
-    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
-    <link rel="alternate" type="application/atom+xml" title="Booo" href="/atom.xml">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
-    <title>
-        
-        如果一切只是虚幻｜Booo&#39;s blog
-        
-    </title>
-
-    <link rel="canonical" href="http://example.com/2023/01/18/2023-01-18 如果一切只是虚幻/">
-
-    <!-- Bootstrap Core CSS -->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>Booo | Take me to the TARDIS</title>
     
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-
-
-    <!-- Custom CSS -->
-    
-<link rel="stylesheet" href="/css/blog-style.css">
-
-
-    <!-- Pygments Github CSS -->
-    
-<link rel="stylesheet" href="/css/syntax.css">
-
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<style>
-
-    header.intro-header {
-        background-image: url('//o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg')
-    }
-</style>
-<!-- hack iOS CSS :active style -->
-<body ontouchstart="" class="animated fadeIn">
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
-" data-ishome = "false" >
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand animated pulse" href="/">
-                <span class="brand-logo">
-                    Booo
-                </span>
-                's Blog
-            </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <!-- Known Issue, found by Hux:
-            <nav>'s height woule be hold on by its content.
-            so, when navbar scale out, the <nav> will cover tags.
-            also mask any touch event of tags, unfortunately.
-        -->
-        <!-- /.navbar-collapse -->
-        <div id="huxblog_navbar">
-            <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-					
-                    
-                        
-							
-                        <li>
-                            <a href="/Tags/">Tags</a>
-                        </li>
-							
-						
-                    
-					
-					
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- /.container -->
-</nav>
-<script>
-    // Drop Bootstarp low-performance Navbar
-    // Use customize navbar with high-quality material design animation
-    // in high-perf jank-free CSS3 implementation
-//    var $body   = document.body;
-    var $toggle = document.querySelector('.navbar-toggle');
-    var $navbar = document.querySelector('#huxblog_navbar');
-    var $collapse = document.querySelector('.navbar-collapse');
-
-    $toggle.addEventListener('click', handleMagic)
-    function handleMagic(e){
-        if ($navbar.className.indexOf('in') > 0) {
-        // CLOSE
-            $navbar.className = " ";
-            // wait until animation end.
-            setTimeout(function(){
-                // prevent frequently toggle
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px"
-                }
-            },400)
-        }else{
-        // OPEN
-            $collapse.style.height = "auto"
-            $navbar.className += " in";
-        }
-    }
-</script>
-
-<!-- Main Content -->
-
-<!--only post-->
-
-
-<img class="wechat-title-img"
-     src="nullhttps://img.chelseafc.com//image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2020-21/champions-league-final/Havertz-goal-cl-final-2.jpg">
-
-
-<style>
-    
-    header.intro-header {
-        background-image: url('https://img.chelseafc.com//image/upload/f_auto,w_1440,c_fill,q_90/editorial/match-reports/2020-21/champions-league-final/Havertz-goal-cl-final-2.jpg?imageView2/1/w/1400/h/400/interlace/1/q/90')
-    }
+<link rel="stylesheet" href="/css/reset.css">
 
     
-</style>
+<link rel="stylesheet" href="/css/style.css">
 
-<header class="intro-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <div class="post-heading">
-                    <h1>如果一切只是虚幻</h1>
-                    
-                    <span class="meta">
-                         作者 csbbbv
-                        <span>
-                          日期 2023-01-18
-                         </span>
-                    </span>
-                    <div class="tags text-center">
-                        
-                        <a class="tag" href="/tags/#murmur"
-                           title="murmur">murmur</a>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="post-title-haojen">
-        <span>
+    
+<link rel="stylesheet" href="/css/markdown.css">
+
+    
+<link rel="stylesheet" href="/css/fonts.css">
+
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Booo" type="application/atom+xml">
+</head>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="logo" href="/">Booo</a>
+    <a class="go-home" href="/">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7l6 6" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</div>
+                
+                <div class="post-main">
+
+    
+    
+        <div class="post-main-title">
             如果一切只是虚幻
-        </span>
-    </div>
-</header>
-
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <!-- Post Container -->
-            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <p>随着终场哨声的响起，一切都结束了，颠沛了36年的阿根廷再次赢得了冠军，贺炜引用了阿根廷诗人博尔赫斯的诗句：“命运无论多么复杂漫长，实际上只反映于一个瞬间，那就是人们彻底醒悟自己究竟是谁的那一刻”，讽刺的是，与绝大多数对足球狂热阿根廷人不同，博尔赫斯最厌恶的就是足球，他认为足球在美学上是丑陋的，因为阿根廷足球文化背后狂热的民族主义，足球得民心，因为愚蠢得民心，它激发着仇恨，暴力，痛苦和愚蠢的霸权与慕强。</p>
+        </div>
+        <div class="post-meta">
+            2023-01-18
+        </div>
+        <div class="post-md">
+            <p>随着终场哨声的响起，一切都结束了，颠沛了36年的阿根廷再次赢得了冠军，贺炜引用了阿根廷诗人博尔赫斯的诗句：“命运无论多么复杂漫长，实际上只反映于一个瞬间，那就是人们彻底醒悟自己究竟是谁的那一刻”，讽刺的是，与绝大多数对足球狂热阿根廷人不同，博尔赫斯最厌恶的就是足球，他认为足球在美学上是丑陋的，因为阿根廷足球文化背后狂热的民族主义，足球得民心，因为愚蠢得民心，它激发着仇恨，暴力，痛苦和愚蠢的霸权与慕强。</p>
 <p>是吧，在世界杯决赛的转播现场，在万众期待的阿根廷人梅西捧杯那一刻听到这段话是这多讽刺，又多矛盾，恰如这人生。</p>
 <p>我也是个球迷，十几年来深爱着一只叫切尔西的球队，可是要问为什么喜欢这只球队，却从来说不上个大概，我甚至找不到是具体哪一天，哪一场球赛爱上了这只球队。可是在数十年的每个日子里， 它像个浮标漂流在我的生活中，伴随着我生活的欢乐苦痛，也带给我不少欢乐苦痛。</p>
 <p>我记得那些快乐的瞬间， 2012年的老男孩们圆梦捧起大耳朵杯，2015年穆鸟二进宫再夺联赛冠军，17年孔蒂三中卫席卷英超，19年蓝八在转会禁令的低谷中刮起青春风暴，21年图赫尔临危受命带领这些小孩们再度拿下欧冠。令人感动的远不止这些鲜花掌声，也包括托雷斯晃过巴萨后卫完成复仇的瞬间，包括威廉离队后的感激之言，包括阿扎尔那些年的身影，包括惨败后吕迪格在场边的道歉，包括特里的演讲，包括图赫尔在制裁后的那些发言。</p>
@@ -193,196 +54,32 @@
 <p>忘记谁说的，人生像恍然醒在万人体育场内， 比赛正在激烈地进行， 观众们为各自的球队呐喊尖叫， 你能做的就是也选一只球队支持， 否则你的人生迷途也无处可去。有的人在这方面是有天赋的， 比如三岁摸了把吉他就写出一首歌，五岁代替哥哥踢球第一次上场过了十一个人， 十六岁那年陪同学海选意外被选中。有人幸运得美人鱼追着问你要金斧头还是银斧头， 我只能当一天和尚看别人敲一天钟。 能做的仅限于以为自己很喜欢，以为很喜欢这支球队，以为很喜欢这部电影，那双鞋子，这份工作。假装喜欢耳机里baseline带来的感动，假装喜欢滑雪时呼啸的感觉，假装喜欢聚会的快乐氛围，可这些转念一想都是这么虚幻。这一切就好像在和上帝玩猜小球在哪个罐子，我一个个指一个个问，殊不知小球早被掉包塞到上帝屁股里。</p>
 <p>也许活着就是需要找一支球队支持吧，也许一切本来就是虚幻吧，那些笑声掌声就像香槟的泡沫，那些仇恨和狂热也不过瓶盖崩开时的一声爆裂。也许是真是假有无意义都不重要吧，起码我们还有记忆，那就让它虚幻吧，也许我们爱的就是这矛盾本身，足球和人生都是如此</p>
 
-                <hr>
-                
-
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/2023/05/20/C++入门补完计划001-Cpp如何工作/" data-toggle="tooltip" data-placement="top"
-                           title="C++入门补完001:C++如何工作">&larr; Previous Post</a>
-                    </li>
-                    
-                    
-                    <li class="next">
-                        <a href="/2023/01/16/2023-01-16 时变数据的反事实估计/" data-toggle="tooltip" data-placement="top"
-                           title="时变数据的反事实估计">Next Post &rarr;</a>
-                    </li>
-                    
-                </ul>
-
-                
-
-                
-
-
-                <!--加入新的评论系统-->
-                
-
-                
-
-            </div>
-
-            <div class="hidden-xs col-sm-3 toc-col">
-                <div class="toc-wrap">
-                    
-                </div>
-            </div>
         </div>
 
-        <div class="row">
-            <!-- Sidebar Container -->
+    
 
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
-                
-                <section>
-                    <!-- no hr -->
-                    <h5 class="text-center">
-                        <a href="/tags/">FEATURED TAGS</a>
-                    </h5>
-                    <div class="tags">
-                        
-                        <a class="tag" href="/tags/#murmur"
-                           title="murmur">murmur</a>
-                        
-                    </div>
-                </section>
-                
-
-                <!-- Friends Blog -->
-                
-            </div>
-        </div>
-
-    </div>
-</article>
+</div>
+                <div class="footer">
+    <span>Copyright © 2022 Booo</span>
+    <span>Theme Designed By <a target="_blank" href="https://zheli.design/one-paper">這李設計</a></span>
+</div>
 
 
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
 
 
+<script src="/js/highlight.min.js"></script>
 
 
+<script src="/js/highlightjs-line-numbers.js"></script>
 
-<!-- Footer -->
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <br>
-                <ul class="list-inline text-center">
-                
-                
-                
 
-                
-
-                
-
-                
-                    <li>
-                        <a target="_blank"  href="https://github.com/csbbbv">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                
-
-                
-
-                </ul>
-                <p class="copyright text-muted">
-                    Copyright &copy; Booo 2023
-                    <br>
-                    <span id="busuanzi_container_site_pv" style="font-size: 12px;">PV: <span id="busuanzi_value_site_pv"></span> Times</span>
-                    <br>
-                    Theme by <a target="_blank" rel="noopener" href="https://haojen.github.io/">Haojen Ma</a>
-                </p>
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
 
             </div>
         </div>
-    </div>
-</footer>
-
-<!-- jQuery -->
-
-<script src="/js/jquery.min.js"></script>
-
-
-<!-- Bootstrap Core JavaScript -->
-
-<script src="/js/bootstrap.min.js"></script>
-
-
-<!-- Custom Theme JavaScript -->
-
-<script src="/js/blog.js"></script>
-
-
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
-    }
-</script>
-
-<!-- jquery.tagcloud.js -->
-<script>
-    // only load tagcloud.js in tag.html
-    if($('#tag_cloud').length !== 0){
-        async("http://example.com/js/jquery.tagcloud.js",function(){
-            $.fn.tagcloud.defaults = {
-                //size: {start: 1, end: 1, unit: 'em'},
-                color: {start: '#bbbbee', end: '#0085a1'},
-            };
-            $('#tag_cloud a').tagcloud();
-        })
-    }
-</script>
-
-<!--fastClick.js -->
-<script>
-    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
-        var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
-    })
-</script>
-
-
-
-<!-- Google Analytics -->
-
-
-
-<!-- Baidu Tongji -->
-
-
-<!-- swiftype -->
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install','','2.0.0');
-</script>
-
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-<!--wechat title img-->
-<img class="wechat-title-img" src="https://th.bing.com/th/id/OIP.d7OnnAjr_hDgkdl-Vf587gHaHa?pid=ImgDet&amp;rs=1">
-</body>
-
+    </body>
 </html>
