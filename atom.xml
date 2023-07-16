@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-07-12T14:13:30.743Z</updated>
+  <updated>2023-07-16T08:43:05.248Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>002/140</title>
+    <link href="http://example.com/2023/07/15/002/"/>
+    <id>http://example.com/2023/07/15/002/</id>
+    <published>2023-07-15T14:10:00.000Z</published>
+    <updated>2023-07-16T08:43:05.248Z</updated>
+    
+    <content type="html"><![CDATA[<p>对生活失去希望的一个症状是任由软件安装在系统盘上</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;对生活失去希望的一个症状是任由软件安装在系统盘上&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="140" scheme="http://example.com/Tags/140/"/>
+    
+  </entry>
   
   <entry>
     <title>001/140</title>
