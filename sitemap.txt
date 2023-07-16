@@ -11,5 +11,5 @@ http://example.com/2023/06/11/2023-06-11%20%E5%A3%81%E8%8A%B1%E5%B0%91%E5%B9%B4%
 http://example.com/Tags/index.html
 http://example.com/
 http://example.com/Tags/140/
-http://example.com/Tags/Books/
 http://example.com/Tags/murmur/
+http://example.com/Tags/Books/
