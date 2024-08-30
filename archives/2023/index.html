@@ -112,6 +112,11 @@
 
                 <div class="footer">
     <span>Copyright © 2022 Booo</span>
+    {% if theme.footer.counter %}
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">-<span id="busuanzi_value_site_pv"></span> </span>
+    <span id="busuanzi_container_site_uv">--<span id="busuanzi_value_site_uv"></span> </span>
+{% endif %}
     <!-- <span>Theme Designed By <a target="_blank" href="https://zheli.design/one-paper">LI</a></span> -->
 </div>
 
@@ -124,11 +129,7 @@
 
 <script src="/js/highlightjs-line-numbers.js"></script>
 
-{% if theme.footer.counter %}
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container_site_pv">-<span id="busuanzi_value_site_pv"></span> </span>
-    <span id="busuanzi_container_site_uv">--<span id="busuanzi_value_site_uv"></span> </span>
-{% endif %}
+
 
 <script>
     hljs.initHighlightingOnLoad();
